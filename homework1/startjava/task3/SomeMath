@@ -1,0 +1,38 @@
+class SomeMath {
+    public static void main(String[] args) {
+        int a = 1, b = 2, c = 3, max, mid, min;
+
+        if (a > b && a > c) {
+            max = a;
+            if (b > c) {
+                min = c;
+                mid = b;
+            } else {
+                min = b;
+                mid = c;
+            }
+        } else if (b > c) {
+            max = b;
+            if (a > c) {
+                min = c;
+                mid = a;
+            } else {
+                min = a;
+                mid = c;
+            }
+        } else {
+            max = c;
+            if (a > b) {
+                min = b;
+                mid = a;
+            } else {
+                min = a;
+                mid = b;
+            }
+        }
+
+        System.out.println(min);
+        System.out.println(mid);
+        System.out.println(max);
+    }
+}
