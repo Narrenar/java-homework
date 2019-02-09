@@ -1,0 +1,23 @@
+class SomeMath {
+    public static void main(String[] args) {
+        int a = 1, b = 2, c = 3, max1, max2;
+
+        if (a > b) {
+            max1 = a;
+            if (c > b) {
+                max2 = c;
+            } else {
+                max2 = b;
+            }
+        } else {
+            max1 = b;
+            if (c > a) {
+                max2 = c;
+            } else {
+                max2 = a;
+            }
+        }
+
+        System.out.println(max1 + max2);
+    }
+}
