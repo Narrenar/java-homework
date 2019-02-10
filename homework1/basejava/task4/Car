@@ -1,0 +1,31 @@
+// THE CODE IS NOT FINISHED
+class Car {
+
+    static boolean carGoes = false;
+    static float fuelAmount = 100;
+
+    public static void start() {
+        carGoes = true;
+        System.out.println("Start the Car");
+    }
+
+    public static void stop() {
+        carGoes = false;
+        System.out.println("Stop the Car");
+    }
+
+    public static void isGoes() {
+        System.out.println(carGoes);
+    }
+
+    public static void main(String[] args) {
+
+        if (fuelAmount <= 0) {
+            stop();
+        } else {
+            start();
+        }
+
+        isGoes();
+    }
+}
