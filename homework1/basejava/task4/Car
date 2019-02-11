@@ -15,7 +15,20 @@ class Car {
     }
 
     public static void isGoes() {
-        System.out.println(carGoes);
+        if (carGoes) {
+            System.out.println("The Car is going");
+        } else {
+            System.out.println("The Car is NOT going");
+        }
+    }
+
+    public static void refuel() {
+        fuelAmount = 100;
+        System.out.println("Fuel the Car");
+    }
+
+    public static void getFuelLevel() {
+        System.out.println("Your fuel amount if: " + fuelAmount);
     }
 
     public static void main(String[] args) {
@@ -27,5 +40,6 @@ class Car {
         }
 
         isGoes();
+        System.out.println(System.currentTimeMillis());
     }
 }
